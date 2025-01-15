@@ -142,7 +142,6 @@ hr {
     border: 4px ridge #000000;
     justify-content: center;
     align-items: center;
-    padding-bottom: 0.25vh;
 }
 
 #content .box .titlebar .button:after {
@@ -189,10 +188,12 @@ hr {
 
 #content #music #title {
     font-size: 4vh;
+    text-align: center;
 }
 
 #content #music #interpret {
     font-size: 2.5vh;
+    text-align: center;
 }
 
 #content #music #spotify {
