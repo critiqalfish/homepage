@@ -66,7 +66,7 @@ const randBetw = (min, max) => {
 
 const getSpotifySongData = async (link) => {
     let data = [];
-    const res = await fetch(`https://api.song.link/v1-alpha.1/links?url=${encodeURIComponent(link)}&songIfSingle=true`);
+    const res = await fetch("https://proxy.cors.sh/" + `https://api.song.link/v1-alpha.1/links?url=${encodeURIComponent(link)}&songIfSingle=true`);
     const resJSON = await res.json();
 
     Object.keys(resJSON.entitiesByUniqueId).forEach((k) => {
