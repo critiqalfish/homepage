@@ -228,3 +228,28 @@ hr {
     height: 100%;
     position: relative;
 }
+
+h1.non-mobile-support {
+    display: none;
+    text-align: center;
+}
+
+h1.non-mobile-support:first-of-type {
+    margin-top: auto;
+    margin-bottom: 1vh;
+}
+
+h1.non-mobile-support:last-of-type {
+    margin-top: 1vh;
+    margin-bottom: auto;
+}
+
+@media (max-width: 768px) {
+    body > * {
+        display: none !important;
+    }
+
+    .non-mobile-support {
+        display: initial !important;
+    }
+}
